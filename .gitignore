@@ -1,22 +1,9 @@
-/Assignment_2/nbproject/private/
-/Assignment_2/build/
-/Assignment_2/dist/
-/Assignment_3/nbproject/private/
-/Assignment_3/build/
-/Assignment_3/dist/
-/Home/nbproject/private/
-/Home/build/
-/Home/dist/
-/FYPSystem/nbproject/private/
-/FYPSystem/build/
-/FYPSystem/dist/
-/Course File Management System/nbproject/private/
-/Course File Management System/build/
-/Course File Management System/dist/
+nbproject/private/
+build/
+dist/
 
 # Class Files #
 *.class
 
 # Project configuration File #
-/Course File Management System/src/java/db.properties
-/Hello World/nbproject/private/
+src/java/db.properties
