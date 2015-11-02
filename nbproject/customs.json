@@ -1,0 +1,11 @@
+{
+    "elements": {},
+    "attributes": {
+        "semesterid": {
+            "context": "option"
+        },
+        "pull-right": {
+            "context": "a"
+        }
+    }
+}
