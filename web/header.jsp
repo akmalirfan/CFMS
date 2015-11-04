@@ -139,12 +139,12 @@
 
         <div class="col-xs-2">
             <span style="margin:0px;float:right;margin-top:auto;">
-                <img width=20 src="http://www.utm.my/dev/2014/social-media-icon/mobile-icon(small).jpg" alt="Mobile" onClick="alert('This website can be viewed in mobile device')">
-                <a target="_blank" href="http://www.facebook.com/univteknologimalaysia"><img width=24 src="http://www.utm.my/dev/2014/social-media-icon/iconmonstr-facebook-2-icon.svg" alt="Facebook"></a>
-                <a target="_blank" href="https://twitter.com/utm_my"><img width=24 src="http://www.utm.my/dev/2014/social-media-icon/iconmonstr-twitter-2-icon.svg" alt="Twitter"></a>
-                <a target="_blank" href="http://www.youtube.com/utmskudaimalaysia"><img width=24 src="http://www.utm.my/dev/2014/social-media-icon/iconmonstr-youtube-2-icon.svg" alt="YouTube"></a>
-                <a target="_blank" href="http://instagram.com/utmofficial"><img width=24 src="http://www.utm.my/dev/2014/social-media-icon/iconmonstr-instagram-2-icon.svg" alt="Instagram"></a>
-                <a target="_blank" href="http://www.pinterest.com/utmmy/"><img width=24 src="http://www.utm.my/dev/2014/social-media-icon/iconmonstr-pinterest-2-icon.svg" alt="Pinterest"></a>
+                <img width=20 src="<%=request.getContextPath()%>/img/mobile-icon(small).jpg" alt="Mobile" onClick="alert('This website can be viewed in mobile device')">
+                <a target="_blank" href="http://www.facebook.com/univteknologimalaysia"><img width=24 src="<%=request.getContextPath()%>/img/iconmonstr-facebook-2-icon.svg" alt="Facebook"></a>
+                <a target="_blank" href="https://twitter.com/utm_my"><img width=24 src="<%=request.getContextPath()%>/img/iconmonstr-twitter-2-icon.svg" alt="Twitter"></a>
+                <a target="_blank" href="http://www.youtube.com/utmskudaimalaysia"><img width=24 src="<%=request.getContextPath()%>/img/iconmonstr-youtube-2-icon.svg" alt="YouTube"></a>
+                <a target="_blank" href="http://instagram.com/utmofficial"><img width=24 src="<%=request.getContextPath()%>/img/iconmonstr-instagram-2-icon.svg" alt="Instagram"></a>
+                <a target="_blank" href="http://www.pinterest.com/utmmy/"><img width=24 src="<%=request.getContextPath()%>/img/iconmonstr-pinterest-2-icon.svg" alt="Pinterest"></a>
             </span>
         </div>
     </div>

@@ -116,7 +116,8 @@
                 <div id="selectSectionMajor">
                     <select class="form-control" name="sectionMajor" id="sectionMajor">
                         <%
-                        String[] majors = {"SCSJ", "SCSR", "SCSV", "SCSB", "Mixed", "UNSRI"};
+                        //String[] majors = {"SCSJ", "SCSR", "SCSV", "SCSB", "Mixed", "UNSRI"};
+                        String[] majors = {"SCSJ", "SCSR", "SCSV", "SCSB"};
                         for(String major: majors) {
                             out.print("<option>");
                             out.print(major);
