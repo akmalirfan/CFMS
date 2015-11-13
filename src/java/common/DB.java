@@ -14,7 +14,8 @@ import org.json.*;
 
 /**
  *
- * @author Kiwi
+ * @author Kiwi (Original Author)
+ * Modified by Akmal Irfan
  */
 public class DB {
     private static Connection connection = null;
@@ -56,17 +57,22 @@ public class DB {
         ResultList result = new ResultList(list);
         try {
             DB.getConnection();
-            statement = connection.createStatement();
-            resultSet = statement.executeQuery(query);
-            ResultSetMetaData md = resultSet.getMetaData();
-            int columns = md.getColumnCount();
-            list.add(new HashMap(columns));
-            while (resultSet.next()) {
-                HashMap row = new HashMap(columns);
-                for(int i=1; i<=columns; ++i){           
-                    row.put(md.getColumnLabel(i),resultSet.getString(i));
+            
+            if (connection != null) {
+                statement = connection.createStatement();
+                resultSet = statement.executeQuery(query);
+                ResultSetMetaData md = resultSet.getMetaData();
+                int columns = md.getColumnCount();
+                list.add(new HashMap(columns));
+                while (resultSet.next()) {
+                    HashMap row = new HashMap(columns);
+                    for(int i=1; i<=columns; ++i){           
+                        row.put(md.getColumnLabel(i),resultSet.getString(i));
+                    }
+                    list.add(row);
                 }
-                list.add(row);
+            } else {
+                return null;
             }
         } catch (SQLException e) {
             e.printStackTrace();
@@ -165,7 +171,7 @@ public class DB {
     }
         
     public static JSONArray createJson(String query, String label, String value, String term) {
-        //Get the formating of lable
+        //Get the formatting of label
         JSONArray jsonArray = new JSONArray();
         try {
             DB.getConnection();
